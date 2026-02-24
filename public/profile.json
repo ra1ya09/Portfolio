@@ -1,0 +1,51 @@
+{
+  "name": "Mohammed Raiyan",
+  "title": "Electrical and Electronics Engineer",
+  "address": "Mirpur, Dhaka-Bangladesh",
+  "email": "raiyanrsa@gmail.com",
+  "phone": "+(88)01410161009",
+  "bio": "I am an Electrical Engineering student passionate about building smart, efficient solutions by integrating hardware, software, and modern digital technologies to solve real-world problems",
+  "education": [
+    {
+      "degree": "SSC-Science",
+      "institute": "Adamjee Cantonment Public School",
+      "year": "2018 - 2022",
+      "grade": "GPA 5.00"
+    },
+    {
+      "degree": "HSC-Science",
+      "institute": "Dhaka Commerce College",
+      "year": "2022 - 2024",
+      "grade": "GPA 5.00"
+    },
+    {
+      "degree": "B.Sc in EEE",
+      "institute": "American International University-Bangladesh",
+      "year": "2024 - 2029",
+      "grade": "Ongoing"
+    }
+  ],
+  "skills": [
+    "React / Next.js",
+    "Arduino",
+    "n8n",
+    "Project Handling",
+    "NI Multisim"
+  ],
+  "interests": [
+    "AI Automation",
+    "Reading",
+    "Photography",
+    "Travelling",
+    "Adventure",
+    "Mechanical Keyboards"
+  ],
+  "socials": {
+    "github": "https://github.com/ra1ya09",
+    "linkedin": "https://www.linkedin.com/in/mohammed-raiyan-012804364/",
+    "instagram": "https://instagram.com",
+    "facebook": "https://www.facebook.com/ra1ya09"
+  },
+  "resume": "#",
+  "profileImage": "https://extensive-rose-ihiydbzyi8.edgeone.app/WhatsApp%20Image%202026-02-24%20at%203.23.48%20AM.jpeg"
+}

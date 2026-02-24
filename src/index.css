@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-matte-bg: #0f0e13;
+  --color-matte-card: #1a1921;
+  --color-matte-purple: #8b5cf6;
+  --color-matte-purple-light: #a78bfa;
+  --color-matte-purple-dark: #6d28d9;
+  --color-matte-text: #e2e8f0;
+  --color-matte-text-muted: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-matte-bg text-matte-text font-sans antialiased selection:bg-matte-purple/30 selection:text-matte-purple-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.glass-card {
+  @apply bg-matte-card border border-white/5 rounded-2xl shadow-xl backdrop-blur-sm;
+}
+
+.purple-gradient-text {
+  @apply bg-gradient-to-r from-matte-purple to-matte-purple-light bg-clip-text text-transparent;
+}
+
+.matte-button {
+  @apply px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2;
+}
+
+.matte-button-primary {
+  @apply bg-matte-purple text-white hover:bg-matte-purple-dark shadow-lg shadow-matte-purple/20;
+}
+
+.matte-button-secondary {
+  @apply bg-white/5 text-matte-text hover:bg-white/10 border border-white/10;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-matte-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-matte-purple/20 rounded-full hover:bg-matte-purple/40 transition-colors;
+}
+
