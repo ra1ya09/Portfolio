@@ -46,6 +46,23 @@
     "instagram": "https://instagram.com",
     "facebook": "https://www.facebook.com/ra1ya09"
   },
+  "arsenal": [
+    {
+      "category": "Hardware & Circuits",
+      "items": ["Arduino", "NI Multisim", "Microcontrollers", "PCB Design"],
+      "icon": "Cpu"
+    },
+    {
+      "category": "Software Development",
+      "items": ["React / Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+      "icon": "Code2"
+    },
+    {
+      "category": "Automation & AI",
+      "items": ["n8n", "AI Integration", "Workflow Optimization", "Python"],
+      "icon": "Zap"
+    }
+  ],
   "resume": "#",
   "profileImage": "https://extensive-rose-ihiydbzyi8.edgeone.app/WhatsApp%20Image%202026-02-24%20at%203.23.48%20AM.jpeg"
 }

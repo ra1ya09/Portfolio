@@ -37,7 +37,17 @@
 }
 
 .matte-button-primary {
-  @apply bg-matte-purple text-white hover:bg-matte-purple-dark shadow-lg shadow-matte-purple/20;
+  @apply bg-matte-purple text-white hover:bg-matte-purple-dark shadow-lg shadow-matte-purple/20 relative overflow-hidden;
+}
+
+.matte-button-primary::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full;
+  transition: transform 0.6s ease;
+}
+
+.matte-button-primary:hover::after {
+  @apply translate-x-full;
 }
 
 .matte-button-secondary {

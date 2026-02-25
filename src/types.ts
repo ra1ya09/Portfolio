@@ -28,6 +28,11 @@ export interface ProfileData {
   skills: string[];
   interests: string[];
   socials: Socials;
+  arsenal?: {
+    category: string;
+    items: string[];
+    icon: string;
+  }[];
   resume: string;
   profileImage: string;
 }
