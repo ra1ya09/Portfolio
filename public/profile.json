@@ -49,17 +49,17 @@
   "arsenal": [
     {
       "category": "Hardware & Circuits",
-      "items": ["Arduino", "NI Multisim", "Microcontrollers", "PCB Design"],
+      "items": ["Arduino", "NI Multisim"],
       "icon": "Cpu"
     },
     {
       "category": "Software Development",
-      "items": ["React / Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+      "items": ["React / Next.js", "Vibe Coding"],
       "icon": "Code2"
     },
     {
       "category": "Automation & AI",
-      "items": ["n8n", "AI Integration", "Workflow Optimization", "Python"],
+      "items": ["n8n", "AI Integration", "Workflow Optimization"],
       "icon": "Zap"
     }
   ],
