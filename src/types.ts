@@ -8,6 +8,10 @@ export interface Education {
 export interface Project {
   name: string;
   description: string;
+  liveUrl?: string;
+  codeUrl?: string;
+  tags?: string[];
+  image?: string;
 }
 
 export interface Socials {
@@ -33,6 +37,7 @@ export interface ProfileData {
     items: string[];
     icon: string;
   }[];
+  projects?: Project[];
   resume: string;
   profileImage: string;
 }

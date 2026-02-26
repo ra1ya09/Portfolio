@@ -22,7 +22,8 @@ import {
   Menu,
   X,
   ChevronRight,
-  ArrowUp
+  ArrowUp,
+  Folder
 } from 'lucide-react';
 import { ProfileData } from './types';
 
@@ -115,6 +116,7 @@ export default function App() {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
@@ -154,6 +156,8 @@ export default function App() {
             ))}
             <motion.a
               href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="matte-button matte-button-primary py-2 px-4 text-sm"
@@ -193,6 +197,8 @@ export default function App() {
                 ))}
                 <a
                   href={profile.resume}
+                  target="_blank"
+                  rel="noreferrer"
                   className="matte-button matte-button-primary justify-center"
                 >
                   Resume
@@ -404,10 +410,83 @@ export default function App() {
                 </div>
                 <hr className="my-8 border-white/5" />
                 
-                <a href={profile.resume} className="matte-button matte-button-primary w-full justify-center">
+                <a 
+                  href={profile.resume} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="matte-button matte-button-primary w-full justify-center"
+                >
                   <Download size={18} /> Download CV
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="py-24 px-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-display font-bold mb-16 flex items-center gap-4">
+              <span className="w-12 h-1 bg-matte-purple rounded-full"></span>
+              Featured Projects
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {profile.projects?.map((project, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="glass-card group overflow-hidden flex flex-col"
+                >
+                  <div className="aspect-video overflow-hidden relative">
+                    <img 
+                      src={project.image} 
+                      alt={project.name} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-matte-bg/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                      {project.codeUrl && (
+                        <a 
+                          href={project.codeUrl} 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                        >
+                          <Github size={18} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 flex-grow flex flex-col">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags?.map((tag, j) => (
+                        <span key={j} className="text-[10px] uppercase tracking-wider font-bold text-matte-purple-light px-2 py-1 bg-matte-purple/10 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-matte-purple transition-colors">{project.name}</h3>
+                    <p className="text-matte-text-muted text-sm leading-relaxed mb-6">
+                      {project.description}
+                    </p>
+                    <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
+                      <a 
+                        href={project.codeUrl} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="text-xs font-bold uppercase tracking-widest text-matte-purple flex items-center gap-2 hover:gap-3 transition-all"
+                      >
+                        View Details <ChevronRight size={14} />
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>

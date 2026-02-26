@@ -26,7 +26,7 @@
     }
   ],
   "skills": [
-    "React / Next.js",
+    "Prompt Engineering",
     "Arduino",
     "n8n",
     "Project Handling",
@@ -54,7 +54,7 @@
     },
     {
       "category": "Software Development",
-      "items": ["React / Next.js", "Vibe Coding"],
+      "items": ["Prompt Engineering", "Vibe Coding"],
       "icon": "Code2"
     },
     {
@@ -63,6 +63,16 @@
       "icon": "Zap"
     }
   ],
-  "resume": "#",
+  "projects": [
+    {
+      "name": "Quran Website",
+      "description": "A Holy Quran website made with vibe coding.",
+      "liveUrl": "#",
+      "codeUrl": "https://alquran-sand.vercel.app/",
+      "tags": ["Gemini", "AI", "Vibe Coding"],
+      "image": "https://local-white-id5vbnaxao.edgeone.app/pngtree-sacred-illumination-the-timeless-beauty-of-quran-image_16501204.jpg"
+    }
+  ],
+  "resume": "https://gradual-harlequin-aiqtdcbivz.edgeone.app/MohammedRaiyanResume%20(1).pdf",
   "profileImage": "https://extensive-rose-ihiydbzyi8.edgeone.app/WhatsApp%20Image%202026-02-24%20at%203.23.48%20AM.jpeg"
 }
